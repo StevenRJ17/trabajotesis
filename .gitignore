@@ -1,46 +1,23 @@
-/tesis-frontend/node_modules
-/web-server/node_modules
-/web-server/dist
-/web-server/.env
-git config --global user.name DennisAnchundia
+.DS_Store
+node_modules
+/dist
 
 
-IDEACIÓN SUICIDA
-Desde la
-última
-visita
-1. Deseos de morir
-El/la participante reconoce tener pensamientos sobre su deseo de morir o dejar de vivir o de quedarse dormido/a y no despertar.
-¿Has pensado en estar muerto/a o lo que sería estar muerto/a?
-¿Has deseado estar muerto/a o que pudieras quedarte dormido/a y nunca despertar?
-¿Desearías dejar de vivir?
-Si la respuesta es “sí”, describe:
-Sí No
-2. Pensamientos suicidas activos no específicos
-Pensamientos generales, no específicos de querer terminar con su vida/suicidarse (p. ej., “He pensado en matarme”) sin pensamientos sobre las maneras de
-matarse, métodos relacionados, intenciones o plan durante el período de evaluación.
-¿Has pensado en hacer algo para dejar de vivir?
-¿Has pensado en matarte?
-Si la respuesta es “sí”, describe:
-Sí No
-3. Ideación suicida activa con cualquier método (no un plan) sin intención de actuar
-El/la participante reconoce tener pensamientos suicidas y ha pensado en al menos un método durante el período de evaluación. Esto es diferente a un plan
-específico con hora, lugar o detalles del método elaborado (p. ej., ha pensado en el método para suicidarse pero no en un plan específico). Incluye a las
-personas que digan: “He pensado en tomar una sobredosis pero nunca he ideado un plan específico de cuándo, dónde o cómo lo haría… y nunca lo
-llevaría a cabo”.
-¿Has pensado en cómo lo harías o qué harías para dejar de vivir (matarte?) ¿En qué pensaste?
-Si la respuesta es “sí”, describe:
-Sí No
-4. Ideación suicida activa con cierta intención de actuar, sin un plan específico
-El/la participante tiene pensamientos suicidas activos e informa tener cierta intención de llevarlos a cabo, a diferencia de que dijera “Tengo esos
-pensamientos pero definitivamente no los voy a llevar a cabo”.
-Cuando pensaste hacer algo para dejar de vivir (o matarte), ¿pensaste que esto era algo que realmente podrías hacer?
-Esto es diferente de (al contrario de) tener esos pensamientos, pero sabiendo que no los llevarías a cabo.
-Si la respuesta es “sí”, describe:
-Sí No
-5. Ideación suicida activa con un plan específico e intención
-Pensamientos de suicidio con detalles elaborados completa o parcialmente y el/la participante tiene cierta intención de llevarlos a cabo.
-¿Has decidido cómo o cuándo harías algo para dejar de vivir/matarte? ¿Has planificado (elaboraste los detalles de) cómo lo harías?
-¿Cuál era tu plan?
-Cuando hiciste este plan (o elaboraste los detalles), ¿había alguna parte tuya pensando en hacerlo realmente?
-Si la respuesta es “sí”, describe:
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
