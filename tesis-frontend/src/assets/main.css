@@ -1,0 +1,40 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Animación de "shake" para el error en la tarjeta de login */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-10px); }
+  40% { transform: translateX(10px); }
+  60% { transform: translateX(-10px); }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+  /* Estas propiedades mejoran el rendimiento de la animación en 3D */
+  transform: translate3d(0, 0, 0); 
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Puedes añadir más estilos globales que no sean de Tailwind aquí si es necesario */
+
+/* Estilos para SweetAlert2 si los tienes personalizados */
+.animated-alert {
+  /* ... tus estilos custom de Swal ... */
+}
+.vue-devtools__anchor-btn {
+  display: none !important;
+}
