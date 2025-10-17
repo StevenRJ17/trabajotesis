@@ -3,10 +3,10 @@ const { check } = require('express-validator');
 const { validateJWT } = require('../middlewares/vlaidate-jwt');
 const { validateFields } = require('../middlewares/validate-fields');
 const { esEmailValid } = require('../helpers/db-validator');
-const { 
-    createStudent, 
-    getStudents, 
-    updateStudent, 
+const {
+    createStudent,
+    getStudents,
+    updateStudent,
     deleteStudent,
     searchStudents,
     addClinicalNote,
@@ -73,7 +73,7 @@ router.put('/:id', [
     check('career', 'La carrera es obligatoria').optional().not().isEmpty(),
     check('level', 'El nivel académico es obligatorio').optional().not().isEmpty(),
     check('employmentStatus', 'La situación laboral debe ser válida')
-        .optional().isIn(['EMPLEADO', 'DESEMPLEADO', 'ESTUDIANTE_TIEMPO_COMPLETO']),
+        .optional().isIn(['EMPLEADO', 'DESEMPLEADO', 'ESTUDIANTE']),
     check('income', 'Los ingresos deben ser un número válido').optional().isNumeric(),
     validateFields
 ], updateStudent);
